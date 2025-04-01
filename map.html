@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+        // penggunaan map pada angka
+        const angka = [1, 2, 3, 4, 5];
+
+        const angkaGanda = angka.map(function(n) {
+            return n * 2;
+        });
+
+        console.log(angkaGanda);
+
+        // contoh lain penggunaan map
+        const expression = ['rofl', 'lol', 'omg', 'ttyl']
+
+        const capsExpression = expression.map(function(exprs) {
+            return exprs.toUpperCase()
+        })
+
+    </script>
+</body>
+</html>
