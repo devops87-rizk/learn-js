@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+        // Spread Operator
+        // (...) ditandai dengan tiga tanda titik
+        // mengubah suatu array atau objek bahkan string menjadi deret parameter untuk function
+        // cth 1 :
+        // const angka = [1, 2, 3, 4];
+        // Math.max(...angka); 
+
+        // menggabungkan array (concatenating)
+        // const buah1 = ['Apel', 'Mangga'];
+        // const buah2 = ['Jeruk', 'Pisang'];
+
+        // const semuaBuah = [...buah1, ...buah2, 'Nanas'];
+
+        // console.log(semuaBuah);
+
+        // menyalin array (shallow copy)
+        // const angkaAsli = [1, 2, 3];
+        // const salinanAngka = [...angkaAsli];
+
+        // console.log(salinanAngka);
+
+        // salinanAngka.push(4);
+        // console.log(salinanAngka);
+
+        // Destructing
+        const peserta = ['Batman', 'Spiderman', 'Superman', 'Hulk'];
+        const [satu, dua, tiga, ...Hero] = peserta;
+
+    
+    </script>
+</body>
+</html>
