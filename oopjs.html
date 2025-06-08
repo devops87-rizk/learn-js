@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // I. Factory Function
+        // fungsi yang digunakan untuk membuat dan mengembalikkan objek baru tanpa harus menggunakan class / constructor function
+        // contoh function yang tidak menggunakan Factory Function
+
+        // const hex = (r, g, b) => {
+        //     return '#' + ((1 << 24) +(r << 16) + (g << 8) + b).toString(16).slice(1);
+        // };
+
+        // const rgb = (r, g, b) => {
+        //     return `rgb(${r}, ${g}, ${b})`;
+        // };
+
+        // contoh menggunakan Factory Function
+
+        // function converterColor(r, g, b) {
+        //     const color ={};
+
+        //     color.r = r;
+        //     color.g = g;
+        //     color.b = b;
+
+        //     color.rgb = function() {
+        //         const{r, g, b} = this;
+        //         return `rgb(${r}, ${g}, ${b})`;                
+        //     };
+
+        //     color.hex = function() {
+        //         const{r, g, b} = this;
+        //         return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+        //     };
+        
+        //     return color;
+        // };
+
+        // II Constructor Function
+        // fungsi yang digunakan untuk membuat object baru dengan cara yang lebih sistematis
+
+        // function Color (r, g, b) {
+        //     this.r = r;
+        //     this.g = g;
+        //     this.b = b;
+        // }
+
+        // Color.prototype.rgb = function () {
+        //     const {r, g, b} = this;
+        //     return `rgb(${r}, ${g}, ${b})`;
+        // };
+
+        // Color.prototype.hex = function () {
+        //     const {r, g, b} = this;
+        //     return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+        // };
+
+        // const color1 = new Color(77, 123, 111);
+        // const color2 = new Color(90, 134, 117);
+
+        // III Object Class
+        class Color {
+            constructor(r, g, b, name) {
+                this.r = r;
+                this.g = g;
+                this.b = b;
+                this.name = name;
+            }
+
+            colorName() {
+                console.log("The color name is " + this.name);
+            }
+
+            rgb() {
+                const{r,g,b} = this;
+                return `rgb(${r}, ${g}, ${b})`;
+            }
+        }
+        
+    </script>
+</body>
+</html>
