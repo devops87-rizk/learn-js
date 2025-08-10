@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function dengan parameter
+        // function sayHello(firstName, lastName) {
+        //     console.log(`Hello ${firstName} ${lastName}`);
+        // }
+
+        // Function dengan return value
+        // function sayHello(firstName, lastName) {
+        //     const say = `Hello ${firstName} ${lastName}` ;
+        //     return say;
+        // }
+
+        // const result = sayHello("Rizky", "Rahman");
+        // console.log(result);
+
+        // Function dengan return lebih dari 1
+        // function getFinalValue(value) {
+        //     if (value > 90) {
+        //         return "A";
+        //     } else if (value > 80) {
+        //         return "B";
+        //     } else if (value > 70) {
+        //         return "C";
+        //     } else if (value > 60) {
+        //         return "D";
+        //     } else {
+        //         return "E";
+        //     }
+        // }
+
+        // Function dgn return value array
+
+        function isContains (array, searchValue) {
+            for (const element of array) {
+                if (element === searchValue) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        const array = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+        const search = 18;
+        const found = isContains(array, search);
+        console.log(found);
+
+    </script>
+</body>
+</html>
