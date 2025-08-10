@@ -7,35 +7,23 @@
 </head>
 <body>
     <script>
-        // PERBANDINGAN PENGGUNAAN ARROW FUNCTION
-        // 1. Function Dasar
-        // function perpangkatan(n) {
-        //     return n * n;
-        // }
-        
-        // const hasil = perpangkatan(5)
+    // Alternatif pembuatan function yang lebih sederhana dari function biasanya
+    // Menggunakan tanda =>
 
-        // 2. Function Expression
-        const hasil = function(n) {
-            return n * n;
-        }
+    // const sayHello = (name) => {
+    //     const say = `Hello ${name}`;
+    //     console.info(say);
+    // }
 
-        // 3. Arrow Function
-        const perpangkatan = (n) => {
-            return n * n;
-        }
-        
-        // contoh 1 penggunaan arrow function
+    // sayHello("Rizky")
 
-        // const tambah = (a, b) => a + b;
-        // console.log(tambah(5, 3));
+    // Arrow function tanpa menggunakan block {}
 
-        // contoh 2 penggunaan arrow function
+    const sayHello = (name) => console.info (`Hello ${name})
 
-        // const angka = [1, 2, 3, 4, 5];
-        
-        // const angkaGanda = angka.map(angka => angka * 2);
-        // console.log(angkaGanda);
+
+
+
     </script>
 </body>
 </html>
